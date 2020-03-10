@@ -2,10 +2,9 @@ import socket
 import threading
 import TCPServer
 import Negocio
-import json
 
 # TCP Configuration
-host = '192.168.0.2'
+host = '192.168.7.140'
 port = 30000
 
 server = TCPServer.TCPServer(host,port)
@@ -29,11 +28,17 @@ while True:
 		data = negocio.getPlants()
 		server.writeTCP(str(data)+'\n')
 	elif msg[0] == 'newPlant':
-		data = negocio.newPlant(msg[1],msg[2],msg[3],msg[4])
+		data = negocio.newPlant(msg[1],msg[2],msg[3],msg[4],msg[5])
 		server.writeTCP('ACK!\n')
 	elif msg[0] == 'modifyPlant':
 		data = negocio.modifyPlant(msg[1],msg[2],msg[3])
 		server.writeTCP('ACK!\n')
+	elif msg[0] == 'deletePlant':
+		data = negocio.deletePlant(msg[1])
+		server.writeTCP('ACK!\n')
+	elif msg[0] == 'getEnabledPlants':
+		data = negocio.getEnabledPlants()
+		server.writeTCP(str(data)+'\n')
 
 
 #print 'Received {}'.format(server.handle_client_read())
