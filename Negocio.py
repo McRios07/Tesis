@@ -14,7 +14,7 @@ class negocio():
         return self.c.update(consult)
         
     def deletePlant(self,idPlanta):
-        consult = ("DELETE FROM plantas WHERE IdPlanta = '%d'"%(idPlanta))
+        consult = ("DELETE FROM plantas WHERE IdPlanta = '%s'"%(idPlanta))
         return self.c.delete(consult)
         
     def getPlants(self):
