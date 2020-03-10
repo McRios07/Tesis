@@ -4,9 +4,13 @@ class negocio():
     c =Crud.crud()
     def __init__(self):
         pass
+        
+    def getPlants(self):
+        consult = ("SELECT idPlanta, Nombre, Sensor, Presion, Habilitado, Descripcion FROM plantas")
+        return self.c.select(consult)
 
-    def newPlant(self,Nombre,Sensor,Habilitado,Descripcion):
-        consult = ("INSERT INTO plantas(Nombre,Sensor,Habilitado,Descripcion) VALUES('%s','%s','%s','%s')"%(Nombre,Sensor,Habilitado,Descripcion))
+    def newPlant(self,Nombre,Sensor,Presion,Habilitado,Descripcion):
+        consult = ("INSERT INTO plantas(Nombre,Sensor,Presion,Habilitado,Descripcion) VALUES('%s','%s','%s','%s','%s')"%(Nombre,Sensor,Presion,Habilitado,Descripcion))
         return self.c.insert(consult)
         
     def modifyPlant(self,idPlanta,campo,newData):
@@ -17,8 +21,8 @@ class negocio():
         consult = ("DELETE FROM plantas WHERE IdPlanta = '%s'"%(idPlanta))
         return self.c.delete(consult)
         
-    def getPlants(self):
-        consult = ("SELECT Nombre, Sensor, Descripcion, Habilitado, idPlanta FROM plantas")
+    def getEnabledPlants(self):
+        consult = ("SELECT IdPlanta, Nombre,Sensor,Presion FROM plantas WHERE Habilitado = 1")
         return self.c.select(consult)
 
     def newRecord(self,idPlant,date,pressure,temperature):
@@ -36,7 +40,3 @@ class negocio():
     def setSettings(self,settings,value):
         consult = ("UPDATE configuracion SET Valor = '%s' WHERE Configuracion = '%s'"%(value,settings))
         return self.c.update(consult)
-
-    def getEnabledPlants(self):
-        consult = ("SELECT IdPlanta, Sensor FROM plantas WHERE Habilitado = 1")
-        return self.c.select(consult)
