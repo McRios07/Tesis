@@ -6,30 +6,35 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 
 negocio = Negocio.negocio()
-columns = negocio.getEnabledPlants()
+columns = negocio.getCalibratedPlants()
 
-plants = []
+if columns[0][1] == 1:
+    pin = negocio.getSetting("Sensor1")
+else:
+    pin = negocio.getSetting("Sensor2")
+port = 0
+id = columns[0][0]
 
-for i in columns:
-    x = Planta.plant(i[1],0,i[0])
-    plants.append(x)
+sensor = Planta.plant(pin,port,id)
 
-pinSensor = negocio.getSettings("Pin sensor")
-pressurSensor = Planta.plant(int(pinSensor),1,0)
-atmosphericPressure = pressurSensor.getPressure()
-negocio.setSettings("Presion sensor",atmosphericPressure)
+pinRef = negocio.getSetting("SensorReferencia")
+portRef = 1
+idRef = 0
 
-negocio.setSettings("Calibrando",1)
+sensorRef = Planta.plant(pinRef,portRef,idRef)
+atmosphericPressure = sensorRef.getPressure()
+
+initialPressure = negocio.getSetting("presionInicial")
+margenRef = negocio.getSetting("Margen")
+
+pressureInf =initialPressure - (margenRef/100.0)*initialPressure
+pressureSup =initialPressure + (margenRef/100.0)*initialPressure
 
 
-while True:
-    for i in plants:
-        #print(i)
-        #print(atmosphericPressure)
-        p = i.getPressure()
-        #print(p)
-        if p > atmosphericPressure:
-            negocio.updatePressure(i.idPlant,p-atmosphericPressure)
-
-    if negocio.getSettings("Calibrando") == 0:
-        break
+while (negocio.getCalibrando(id)[0][0] == 1):
+    pressure =sensor.getPressure()
+    negocio.updatePressure(sensor.id,pressure)
+    if ((pressure - atmosphericPressure) > pressureInf and (pressure - atmosphericPressure) < pressureSup):
+        negocio.setCalibrado('1',sensor.id)
+    else
+        negocio.setCalibrado('0',sensor.id)

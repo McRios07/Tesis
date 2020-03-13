@@ -28,18 +28,34 @@ class negocio():
     def getCalibrado(self,idPlanta):
         consult = ("SELECT Calibrado FROM plantas WHERE IdPlanta = '%s'"%(idPlanta))
         return self.c.select(consult)
+    
+    def setCalibrado(self,value,idPlant):
+        consult = ("UPDATE plantas SET Calibrado = '%s' WHERE IdPlanta = '%s'"%(value,idPlant))
+        return self.c.update(consult)
+        
+    def getCalibratedPlants(self):
+        consult = ("SELECT IdPlanta,Sensor FROM plantas WHERE Habilitado = 1 and Calibrando = 1")
+        return self.c.select(consult)
+        
+    def getCalibrando(self,idPlanta):
+        consult = ("SELECT Calibrando FROM plantas WHERE IdPlanta = '%s'"%(idPlanta))
+        return self.c.select(consult)
+        
+    def getMeasuredPlants(self):
+        consult = ("SELECT IdPlanta,Sensor FROM plantas WHERE Habilitado = 1 and Calibrado = 1")
+        return self.c.select(consult)
         
     def newRecord(self,idPlant,date,pressure,temperature):
         consult = ("INSERT INTO registroplantas(IdPlanta,FechaHora,Presion,Temperatura) VALUES('%s','%s','%s','%s')"%(idPlant,date,pressure,temperature))
         return self.c.insert(consult)
 
     def updatePressure(self,idPlant,pressure):
-        consult = ("UPDATE plantas SET Presion = '%f' WHERE IdPlanta = '%d'"%(pressure,idPlant))
+        consult = ("UPDATE plantas SET Presion = '%s' WHERE IdPlanta = '%s'"%(pressure,idPlant))
         return self.c.update(consult)
 
     def getSetting(self,settings):
         consult = ("SELECT Valor FROM configuracion WHERE Configuracion = '%s'"%(settings))
-        return int(self.c.select(consult)[0][0])
+        return self.c.select(consult)[0][0]
 
     def setSetting(self,setting,value):
         consult = ("UPDATE configuracion SET Valor = '%s' WHERE Configuracion = '%s'"%(value,setting))
