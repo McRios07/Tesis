@@ -2,21 +2,26 @@ import socket
 import threading
 import TCPServer
 import Negocio
+import os
 
+def callCalibracion():
+	os.system("python2 Calibracion.py")
+	
+def callRecepcion():
+	os.system("python2 Recepcion.py")
+	
 # TCP Configuration
-host = '192.168.7.140'
+host = '192.168.1.2'
 port = 30000
 
 server = TCPServer.TCPServer(host,port)
 negocio = Negocio.negocio()
 
-'''
-client_handler = threading.Thread(
-	target=TCPServer.handle_client_connection,
-	args=(client_sock,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
-)
-client_handler.start()
-'''
+
+calibracion = threading.Thread(target=callCalibracion)
+recepcion = threading.Thread(target=callRecepcion)
+
+
 
 server.clientConnection()
 while True:
@@ -42,14 +47,17 @@ while True:
 	elif msg[0] == 'setSetting':
 		data = negocio.setSetting(msg[1],msg[2])
 		server.writeTCP('ACK!\n')
+	elif msg[0] == 'getSetting':
+		data = negocio.getSetting(msg[1])
+		server.writeTCP(str(data)+'\n')
 	elif msg[0] == 'startCalibration':
 		data = negocio.modifyPlant(msg[1],msg[2],msg[3])
 		server.writeTCP('ACK!\n')
-	
+		calibracion.start()
 	elif msg[0] == 'stopCalibration':
 		data = negocio.modifyPlant(msg[1],msg[2],msg[3])
 		server.writeTCP('ACK!\n')
-		
+		calibracion.join()
 	elif msg[0] == 'getCalibrado':
 		data = negocio.getCalibrado(msg[1])
 		server.writeTCP(str(data)+'\n')
