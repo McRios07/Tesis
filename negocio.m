@@ -14,7 +14,7 @@ classdef negocio
       function tabla = getTable(obj)
           data = 'getPlants';
           tabla = socketConnection(obj,data);
-          
+         
           tabla = jsondecode(tabla);
           tabla = cellfun(@transpose,tabla,'UniformOutput',false);
           tabla=cat(1,tabla{:});
@@ -31,6 +31,7 @@ classdef negocio
           Calibrando = cellfun(@str2num,Calibrando);
           Calibrado = string(tabla(:,8));
           Calibrado = cellfun(@str2num,Calibrado);
+          Calibrado = logical(Calibrado);
           
           tabla = table(Id, Nombre, Sensor, Descripcion, Presion, Habilitado, Calibrando, Calibrado);
       end
@@ -40,22 +41,11 @@ classdef negocio
       end
       
       function msg = modifyPlant(obj,id,indices,tabla)
-            id = table2array(id)
-            table2cell(tabla(indices(1),:))
-            cellstr(table2cell(tabla(indices(1),:)))
-            table2array(tabla(indices(1),:))
-            
-            
-%             nombre = tabla(:,1)
-%             nombre = table2array(nombre)
-%             sensor = tabla(:,2)
-%             sensor = table2array(sensor)
-%             descripcion = tabla(:,3)
-%             descripcion = table2array(descripcion)
-                                                               %El dato a modificar se convierte a string
-            data = strcat('modifyPlant','#',num2str(id(indices(1))),'#',tabla(indices(1),1),'#',tabla(indices(1),2),'#',tabla(indices(1),3));         %Se concatena la cadena que se va a mandar por el socket
-%             msg = socketConnection(obj,data);                                                         %Se manda la variable concatenada al socket
-            
+            id = table2array(id);
+            data = table2cell(tabla(indices(1),:));
+            data = string(data);
+            data = strcat('modifyPlant','#',num2str(id(indices(1))),'#',data(1),'#',data(2),'#',data(3));         %Se concatena la cadena que se va a mandar por el socket
+            msg = socketConnection(obj,data); 
       end
       
       function msg = deletePlant(obj,id,indices)
@@ -65,6 +55,13 @@ classdef negocio
           msg = socketConnection(obj,data);
       end
       
+      function msg = modifySetting(obj,data)     
+            msg = socketConnection(obj,data); 
+      end
+      
+      function msg = getSetting(obj,data)  
+            msg = socketConnection(obj,data); 
+      end
       
    end
 end
