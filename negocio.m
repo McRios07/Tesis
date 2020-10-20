@@ -41,14 +41,19 @@ classdef negocio
       
       function msg = modifyPlant(obj,id,indices,tabla)
             id = table2array(id)
-            nombre = tabla(:,1)
-            nombre = table2array(nombre)
-            sensor = tabla(:,2)
-            sensor = table2array(sensor)
-            descripcion = tabla(:,3)
-            descripcion = table2array(descripcion)
+            table2cell(tabla(indices(1),:))
+            cellstr(table2cell(tabla(indices(1),:)))
+            table2array(tabla(indices(1),:))
+            
+            
+%             nombre = tabla(:,1)
+%             nombre = table2array(nombre)
+%             sensor = tabla(:,2)
+%             sensor = table2array(sensor)
+%             descripcion = tabla(:,3)
+%             descripcion = table2array(descripcion)
                                                                %El dato a modificar se convierte a string
-%             data = strcat('modifyPlant','#',num2str(id(indices(1))),'#',tabla(indices(1),1),'#',tabla(indices(1),2),'#',tabla(indices(1),3));         %Se concatena la cadena que se va a mandar por el socket
+            data = strcat('modifyPlant','#',num2str(id(indices(1))),'#',tabla(indices(1),1),'#',tabla(indices(1),2),'#',tabla(indices(1),3));         %Se concatena la cadena que se va a mandar por el socket
 %             msg = socketConnection(obj,data);                                                         %Se manda la variable concatenada al socket
             
       end
