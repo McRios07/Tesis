@@ -63,5 +63,9 @@ classdef negocio
             msg = socketConnection(obj,data); 
       end
       
+      function msg = setCalibrando(obj,data)  
+            msg = socketConnection(obj,data); 
+      end
+      
    end
 end
