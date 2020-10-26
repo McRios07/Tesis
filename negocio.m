@@ -56,16 +56,33 @@ classdef negocio
       end
       
       function msg = modifySetting(obj,data)     
-            msg = socketConnection(obj,data); 
+            msg = socketConnection(obj,data);
       end
       
       function msg = getSetting(obj,data)  
             msg = socketConnection(obj,data); 
       end
       
-      function msg = setCalibrando(obj,data)  
+      function msg = setCalibrando(obj,value,id) 
+            data = strcat('setCalibrando','#',value,'#',num2str(id));
             msg = socketConnection(obj,data); 
       end
       
+      function msg = updatePressureCalibrate(obj,id) 
+            data = strcat('getPressureCalibrando#',num2str(id));
+            msg = socketConnection(obj,data); 
+      end
+      
+      function msg = getCalibratedPlants(obj)
+          data = 'getCalibratedPlants';
+          data = char(data);
+          msg = socketConnection(obj,data);
+          msg = jsondecode(msg);
+      end
+      
+      function msg = setCalibrado(obj,value,id) 
+            data = strcat('setCalibrado','#',value,'#',num2str(id));
+            msg = socketConnection(obj,data); 
+      end
    end
 end
