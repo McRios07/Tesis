@@ -78,8 +78,6 @@ classdef negocio
           data = char(data);
           msg = socketConnection(obj,data)
           msg = jsondecode(msg);
-          msg = cellfun(@transpose,msg,'UniformOutput',false);
-          msg=cat(1,msg{:})
       end
       
       function msg = setCalibrado(obj,value,id) 
