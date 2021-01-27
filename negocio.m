@@ -1,4 +1,4 @@
-classdef negocio
+ classdef negocio
    properties
       socket = tcpip('192.168.0.70', 30000, 'NetworkRole', 'client');
    end
