@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15226,49 +15226,49 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="40.64" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_0" class="0">
+<net name="LAZO2" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="167.64" y1="154.94" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
 <label x="162.56" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_2" class="0">
+<net name="LAZO4" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="167.64" y1="152.4" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
 <label x="142.24" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_4" class="0">
+<net name="LAZO6" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="167.64" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 <label x="162.56" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_6" class="0">
+<net name="LAZO8" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="7"/>
 <wire x1="167.64" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <label x="142.24" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_8" class="0">
+<net name="CLK3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="9"/>
 <wire x1="167.64" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="162.56" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_10" class="0">
+<net name="DOUT3_1" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="13"/>
 <wire x1="167.64" y1="139.7" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
 <label x="162.56" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_12" class="0">
+<net name="DOUT3_3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="15"/>
 <wire x1="167.64" y1="137.16" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
@@ -15352,56 +15352,56 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="142.24" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_1" class="0">
+<net name="LAZO1" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="175.26" y1="154.94" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
 <label x="180.34" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_3" class="0">
+<net name="LAZO3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="4"/>
 <wire x1="175.26" y1="152.4" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
 <label x="200.66" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_5" class="0">
+<net name="LAZO5" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="6"/>
 <wire x1="175.26" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 <label x="180.34" y="149.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_7" class="0">
+<net name="LAZO7" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
 <wire x1="175.26" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 <label x="200.66" y="147.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_9" class="0">
+<net name="SCLK3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="10"/>
 <wire x1="175.26" y1="144.78" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
 <label x="180.34" y="144.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_11" class="0">
+<net name="DRDY3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="14"/>
 <wire x1="175.26" y1="139.7" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
 <label x="180.34" y="139.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_13" class="0">
+<net name="DOUT3_2" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="16"/>
 <wire x1="175.26" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
 <label x="200.66" y="137.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_15" class="0">
+<net name="DOUT3_4" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="18"/>
 <wire x1="175.26" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
@@ -15450,7 +15450,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="200.66" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_29" class="0">
+<net name="LAZO_8" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="34"/>
 <wire x1="175.26" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
@@ -15527,35 +15527,35 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="180.34" y="71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_14" class="0">
+<net name="DOUT2_7" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="17"/>
 <wire x1="167.64" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
 <label x="162.56" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_16" class="0">
+<net name="DOUT2_5" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="19"/>
 <wire x1="167.64" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
 <label x="142.24" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_18" class="0">
+<net name="DOUT2_3" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="21"/>
 <wire x1="167.64" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
 <label x="162.56" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_20" class="0">
+<net name="DOUT2_1" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="23"/>
 <wire x1="167.64" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="142.24" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_22" class="0">
+<net name="SCLK2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="25"/>
 <wire x1="167.64" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
@@ -15639,35 +15639,35 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="162.56" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_13" class="0">
+<net name="DOUT2_8" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="16"/>
 <wire x1="175.26" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="200.66" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_15" class="0">
+<net name="DOUT2_6" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="18"/>
 <wire x1="175.26" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <label x="180.34" y="66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_17" class="0">
+<net name="DOUT2_4" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="20"/>
 <wire x1="175.26" y1="63.5" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
 <label x="200.66" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_19" class="0">
+<net name="DOUT2_2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="22"/>
 <wire x1="175.26" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
 <label x="180.34" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_21" class="0">
+<net name="CLK2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="24"/>
 <wire x1="175.26" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
@@ -15716,7 +15716,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="180.34" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_23" class="0">
+<net name="DRDY2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="26"/>
 <wire x1="175.26" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
@@ -15730,7 +15730,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="60.96" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_12" class="0">
+<net name="SYNC2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="15"/>
 <wire x1="167.64" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
@@ -15964,26 +15964,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="68.58" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$105" class="0">
-<segment>
-<wire x1="73.66" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="35"/>
-</segment>
-<segment>
-<wire x1="73.66" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="39"/>
-</segment>
-</net>
-<net name="N$110" class="0">
-<segment>
-<wire x1="73.66" y1="101.6" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="33"/>
-</segment>
-<segment>
-<wire x1="73.66" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="37"/>
-</segment>
-</net>
 <net name="INPUT1-" class="0">
 <segment>
 <wire x1="81.28" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
@@ -16003,26 +15983,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="81.28" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="6"/>
 <label x="86.36" y="137.16" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$114" class="0">
-<segment>
-<wire x1="81.28" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="36"/>
-</segment>
-<segment>
-<wire x1="81.28" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="40"/>
-</segment>
-</net>
-<net name="N$115" class="0">
-<segment>
-<wire x1="81.28" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="34"/>
-</segment>
-<segment>
-<wire x1="81.28" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="38"/>
 </segment>
 </net>
 <net name="INPUT4+" class="0">
