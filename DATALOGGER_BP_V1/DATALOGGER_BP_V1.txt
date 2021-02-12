@@ -1,0 +1,9 @@
+Partlist exported from C:/Users/Mecatronica/Documents/EAGLE/projects/DATALOGGER_BP_V1/DATALOGGER_BP_V1.sch at 12/02/2021 10:40 a. m.
+
+Qty Value   Device     Package      Parts                                                                 Description                            
+2           PINHD-2X10 2X10         JP2, JP3                                                              PIN HEADER                             
+1           PINHD-2X20 2X20         JP1                                                                   PIN HEADER                             
+8   0.1uF   C-USC0805  C0805        C1, C2, C3, C4, C5, C6, C7, C8                                        CAPACITOR, American symbol             
+16  100R    R-US_R0805 R0805        R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16 RESISTOR, American symbol              
+1   1755736 1755736    CONN_1924305 J9                                                                                                           
+8   1985247 1985247    1985247      J1, J2, J3, J4, J5, J6, J7, J8                                        Fixed Terminal Blocks PTSA 1.5/7-3.5-Z 
