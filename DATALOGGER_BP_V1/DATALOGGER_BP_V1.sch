@@ -9405,6 +9405,65 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="TRV 1-1222M">
+<packages>
+<package name="TRV1-1222M">
+<wire x1="0" y1="0" x2="19.6" y2="0" width="0.127" layer="21"/>
+<wire x1="19.6" y1="0" x2="19.6" y2="9.9" width="0.127" layer="21"/>
+<wire x1="19.6" y1="9.9" x2="0" y2="9.9" width="0.127" layer="21"/>
+<wire x1="0" y1="9.9" x2="0" y2="0" width="0.127" layer="21"/>
+<circle x="-1.27" y="8.89" radius="0.3" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="9.9" width="0.127" layer="51"/>
+<wire x1="0" y1="9.9" x2="19.6" y2="9.9" width="0.127" layer="51"/>
+<wire x1="19.6" y1="9.9" x2="19.6" y2="0" width="0.127" layer="51"/>
+<wire x1="19.6" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<circle x="-1.27" y="8.89" radius="0.3" width="0.127" layer="51"/>
+<text x="0" y="11.43" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="1.8" y="7.6" drill="0.5" shape="square"/>
+<pad name="2" x="3.8" y="7.6" drill="0.5" shape="square"/>
+<pad name="7" x="13.8" y="7.6" drill="0.5" shape="square"/>
+<pad name="8" x="15.8" y="7.6" drill="0.5" shape="square"/>
+<pad name="9" x="17.8" y="7.6" drill="0.5" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TRV1-1222M">
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="12.7" length="short"/>
+<pin name="GND" x="-2.54" y="10.16" length="short"/>
+<pin name="-VOUT" x="-2.54" y="7.62" length="short"/>
+<pin name="COM" x="-2.54" y="5.08" length="short"/>
+<pin name="+VOUT" x="-2.54" y="2.54" length="short"/>
+<text x="0" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TRV1-1222M" prefix="IC">
+<gates>
+<gate name="G$1" symbol="TRV1-1222M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRV1-1222M">
+<connects>
+<connect gate="G$1" pin="+VOUT" pad="9"/>
+<connect gate="G$1" pin="-VOUT" pad="7"/>
+<connect gate="G$1" pin="COM" pad="8"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9418,76 +9477,76 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="J1" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND1" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J2" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND2" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J3" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND3" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J4" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND4" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J5" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND5" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J6" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J7" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND7" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="J8" library="SamacSys_Parts" deviceset="1985247" device=""/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="GND8" library="supply1" deviceset="GNDA" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300R"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7nF"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X20" device="" package3d_urn="urn:adsk.eagle:package:22443/2"/>
 <part name="J9" library="1755736" deviceset="1755736" device=""/>
@@ -9504,11 +9563,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
-<part name="P+22" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+23" library="supply1" deviceset="+5V" device=""/>
-<part name="P+24" library="supply1" deviceset="+5V" device=""/>
 <part name="GND9" library="supply1" deviceset="GNDA" device=""/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.01uF"/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -9584,6 +9641,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P-8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="SUPPLY48" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="IC1" library="TRV 1-1222M" deviceset="TRV1-1222M" device=""/>
+<part name="P+33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="SUPPLY49" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY50" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="P-9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10688,9 +10752,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="P+21" gate="1" x="149.86" y="124.46" smashed="yes" rot="R90">
 <attribute name="VALUE" x="148.44" y="125.12" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+22" gate="1" x="218.44" y="124.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="219.06" y="123.6" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY23" gate="GND" x="200.66" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="207.845" y="69.415" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -10700,11 +10761,30 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="P+23" gate="1" x="149.86" y="66.04" smashed="yes" rot="R90">
 <attribute name="VALUE" x="148.44" y="66.7" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+24" gate="1" x="218.44" y="66.04" smashed="yes" rot="R270">
-<attribute name="VALUE" x="219.06" y="65.18" size="1.778" layer="96"/>
-</instance>
 <instance part="GND9" gate="1" x="55.88" y="68.58" smashed="yes">
 <attribute name="VALUE" x="53.34" y="66.04" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+22" gate="1" x="218.44" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="220.06" y="123.6" size="1.778" layer="96"/>
+</instance>
+<instance part="P+24" gate="1" x="218.44" y="66.04" smashed="yes" rot="R270">
+<attribute name="VALUE" x="220.06" y="65.18" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="G$1" x="63.5" y="27.94" smashed="yes">
+<attribute name="NAME" x="63.4" y="44.12" size="1.27" layer="95"/>
+<attribute name="VALUE" x="63.5" y="25.4" size="1.27" layer="96"/>
+</instance>
+<instance part="P+33" gate="1" x="55.88" y="40.64" smashed="yes" rot="R90">
+<attribute name="VALUE" x="53.96" y="41.4" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY49" gate="GND" x="45.72" y="38.1" smashed="yes" rot="R270">
+<attribute name="VALUE" x="38.755" y="37.325" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY50" gate="GND" x="45.72" y="33.02" smashed="yes" rot="R270">
+<attribute name="VALUE" x="38.755" y="32.245" size="1.778" layer="96"/>
+</instance>
+<instance part="P-9" gate="1" x="55.88" y="35.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="48.54" y="35.1" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -11074,6 +11154,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
 <wire x1="180.34" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY49" gate="GND" pin="GND"/>
+<wire x1="60.96" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="COM"/>
+<pinref part="SUPPLY50" gate="GND" pin="GND"/>
+<wire x1="60.96" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -11085,6 +11175,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="71.12" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="36"/>
 <pinref part="P+20" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="20"/>
+<wire x1="215.9" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="P+22" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="20"/>
+<wire x1="215.9" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P+24" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="P+33" gate="1" pin="+12V"/>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="58.42" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -11099,11 +11204,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="P+18" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="P+24" gate="1" pin="+5V"/>
-<pinref part="JP3" gate="A" pin="20"/>
-<wire x1="215.9" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP3" gate="A" pin="19"/>
 <pinref part="P+23" gate="1" pin="+5V"/>
 <wire x1="180.34" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
@@ -11112,11 +11212,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="JP2" gate="A" pin="19"/>
 <pinref part="P+21" gate="1" pin="+5V"/>
 <wire x1="180.34" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+22" gate="1" pin="+5V"/>
-<pinref part="JP2" gate="A" pin="20"/>
-<wire x1="215.9" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -11129,6 +11224,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="55.88" y1="73.66" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 <junction x="55.88" y="73.66"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="P-9" gate="1" pin="-12V"/>
+<pinref part="IC1" gate="G$1" pin="-VOUT"/>
+<wire x1="58.42" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
