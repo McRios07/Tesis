@@ -6,10 +6,10 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element clk_0
+   element clk
    {
       datum _sortIndex
       {
@@ -17,7 +17,7 @@
          type = "int";
       }
    }
-   element hps_0
+   element hps
    {
       datum _sortIndex
       {
@@ -25,15 +25,20 @@
          type = "int";
       }
    }
-   element pio_0
+   element parallel_port_in_axi
    {
       datum _sortIndex
       {
          value = "2";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
-   element pio_0.s1
+   element parallel_port_in_axi.s1
    {
       datum baseAddress
       {
@@ -62,22 +67,22 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
- <interface name="hps_io" internal="hps_0.hps_io" type="conduit" dir="end" />
- <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
+ <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
+ <interface name="hps_io" internal="hps.hps_io" type="conduit" dir="end" />
+ <interface name="memory" internal="hps.memory" type="conduit" dir="end" />
  <interface
-   name="pio_0_external_connection"
-   internal="pio_0.external_connection"
+   name="pp_in_axi"
+   internal="parallel_port_in_axi.external_connection"
    type="conduit"
    dir="end" />
- <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
- <module name="clk_0" kind="clock_source" version="18.0" enabled="1">
+ <interface name="reset" internal="clk.clk_in_reset" type="reset" dir="end" />
+ <module name="clk" kind="clock_source" version="18.0" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="hps_0" kind="altera_hps" version="18.0" enabled="1">
+ <module name="hps" kind="altera_hps" version="18.0" enabled="1">
   <parameter name="ABSTRACT_REAL_COMPARE_TEST" value="false" />
   <parameter name="ABS_RAM_MEM_INIT_FILENAME" value="meminit" />
   <parameter name="ACV_PHY_CLK_ADD_FR_PHASE" value="0.0" />
@@ -607,7 +612,11 @@
   <parameter name="usb_mp_clk_div" value="0" />
   <parameter name="use_default_mpu_clk" value="true" />
  </module>
- <module name="pio_0" kind="altera_avalon_pio" version="18.0" enabled="1">
+ <module
+   name="parallel_port_in_axi"
+   kind="altera_avalon_pio"
+   version="18.0"
+   enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
@@ -624,29 +633,29 @@
  <connection
    kind="avalon"
    version="18.0"
-   start="hps_0.h2f_axi_master"
-   end="pio_0.s1">
+   start="hps.h2f_axi_master"
+   end="parallel_port_in_axi.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="clock" version="18.0" start="clk_0.clk" end="pio_0.clk" />
  <connection
    kind="clock"
    version="18.0"
-   start="clk_0.clk"
-   end="hps_0.f2h_axi_clock" />
+   start="clk.clk"
+   end="parallel_port_in_axi.clk" />
+ <connection kind="clock" version="18.0" start="clk.clk" end="hps.f2h_axi_clock" />
+ <connection kind="clock" version="18.0" start="clk.clk" end="hps.h2f_axi_clock" />
  <connection
    kind="clock"
    version="18.0"
-   start="clk_0.clk"
-   end="hps_0.h2f_axi_clock" />
+   start="clk.clk"
+   end="hps.h2f_lw_axi_clock" />
  <connection
-   kind="clock"
+   kind="reset"
    version="18.0"
-   start="clk_0.clk"
-   end="hps_0.h2f_lw_axi_clock" />
- <connection kind="reset" version="18.0" start="clk_0.clk_reset" end="pio_0.reset" />
+   start="clk.clk_reset"
+   end="parallel_port_in_axi.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
