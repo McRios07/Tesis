@@ -1,0 +1,79 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=DATALOGGER_IPC_V23
+
+[Library]
+DATALOGGER_IPC_V23=.\DATALOGGER_IPC_V23.LIB
+
+[$LibMap$]
+DATALOGGER_IPC_V23=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=datalogger_ipc_v23|datalogger_ipc_v23|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/base_de_tiempo.vhd=-1
+/Contador_ascendente_hold_clear.vhd=-1
+/EDGE_DETECTOR.vhd=-1
+/FSM_CONTROL_PICO.vhd=-1
+/FSM_MUESTRA.vhd=-1
+/FSM_DATALOGGER_IPC_V23.vhd=-1
+/FSM_CONTROL_AREA_V9.vhd=-1
+/FSM_SUMADOR.vhd=-1
+/FSM_VOUT.vhd=-1
+/FSM_VIN.vhd=-1
+/MEMORIA_FIFO.vhd=-1
+/REGISTRO_CORRIMIENTO_IZQ.vhd=-1
+/FSM_VT.vhd=-1
+/Registro_Paralelo_Hold_Clear.vhd=-1
+/Symetric_TimeBase.vhd=-1
+/SPI_SLAVE_V4.vhd=-1
+/Registro_Paralelo_Hold.vhd=-1
+/FSM_SPI.vhd=-1
+/CONTROL_PICO.vhd=-1
+/SUMADOR.vhd=-1
+/TOP_SPI_V4.vhd=-1
+/CONTROL_AREA_V9.vhd=-1
+/DATALOGGER_IPC_V23.vhd=-1
+
+[Files.Data]
+.\src\base_de_tiempo.vhd=VHDL Source Code
+.\src\Contador_ascendente_hold_clear.vhd=VHDL Source Code
+.\src\EDGE_DETECTOR.vhd=VHDL Source Code
+.\src\FSM_CONTROL_PICO.vhd=VHDL Source Code
+.\src\FSM_MUESTRA.vhd=VHDL Source Code
+.\src\FSM_DATALOGGER_IPC_V23.vhd=VHDL Source Code
+.\src\FSM_CONTROL_AREA_V9.vhd=VHDL Source Code
+.\src\FSM_SUMADOR.vhd=VHDL Source Code
+.\src\FSM_VOUT.vhd=VHDL Source Code
+.\src\FSM_VIN.vhd=VHDL Source Code
+.\src\MEMORIA_FIFO.vhd=VHDL Source Code
+.\src\REGISTRO_CORRIMIENTO_IZQ.vhd=VHDL Source Code
+.\src\FSM_VT.vhd=VHDL Source Code
+.\src\Registro_Paralelo_Hold_Clear.vhd=VHDL Source Code
+.\src\Symetric_TimeBase.vhd=VHDL Source Code
+.\src\SPI_SLAVE_V4.vhd=VHDL Source Code
+.\src\Registro_Paralelo_Hold.vhd=VHDL Source Code
+.\src\FSM_SPI.vhd=VHDL Source Code
+.\src\CONTROL_PICO.vhd=VHDL Source Code
+.\src\SUMADOR.vhd=VHDL Source Code
+.\src\TOP_SPI_V4.vhd=VHDL Source Code
+.\src\CONTROL_AREA_V9.vhd=VHDL Source Code
+.\src\DATALOGGER_IPC_V23.vhd=VHDL Source Code
+

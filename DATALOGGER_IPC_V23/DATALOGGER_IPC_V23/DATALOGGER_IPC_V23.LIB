@@ -1,0 +1,251 @@
+timestamp=1559059460111
+
+[base_de_tiempo]
+A/base_de_tiempo=21|./src/base_de_tiempo.vhd|22|1*864591
+B/base_de_tiempo=3*1294465
+I=0*6237
+I/base_de_tiempo=0*7046
+M=11|0|v147|1558994092984|./src/base_de_tiempo.vhd|0*5761*0x55d8cea807187ae430e31e222300406074eea69c|0*6151*0x7bd7e13dc0415552f89596087806a8cf
+M/base_de_tiempo=21|0|v147|1559059458856|./src/base_de_tiempo.vhd|0*6479*0x89876b18dfe60bfebbd13205d9cf79b7bbf7ea76|0*6942*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/base_de_tiempo.vhd|7
+
+[contador_ascendente_hold_clear]
+A/contador=21|./src/contador_ascendente_hold_clear.vhd|18|1*866667
+B/contador=3*1298111
+I=0*8137
+I/contador=0*8970
+M=11|0|v147|1558994093051|./src/contador_ascendente_hold_clear.vhd|0*7604*0x147c7c5ea88cdbf46551625ebe72cbbf0380c7d6|0*8019*0x7bd7e13dc0415552f89596087806a8cf
+M/contador=21|0|v147|1559059458922|./src/contador_ascendente_hold_clear.vhd|0*8330*0xc68d414acfc1069e05106b0c5612aba4fcab90e5|0*8840*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/contador_ascendente_hold_clear.vhd|6
+
+[control_area_v9]
+A/control_area_v9=A/CONTROL_AREA_V9 21|./src/control_area_v9.vhd|54|1*921560
+B/control_area_v9=3*1437966
+I=0*10421
+I/control_area_v9=I/CONTROL_AREA_V9 0*85140
+M=11|0|v147|1558994093105|./src/control_area_v9.vhd|0*9699*0x975b6d5f627dcd6e305e3768ba8e9eef0ec518ce|0*10333*0x7bd7e13dc0415552f89596087806a8cf
+M/control_area_v9=M/CONTROL_AREA_V9 21|0|v147|1559059460001|./src/CONTROL_AREA_V9.vhd|0*80954*0x5d20b7fb2d0b04f682f1206db52d72ce372bfff8|0*85033*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/control_area_v9.vhd|30
+
+[control_pico]
+A/control_pico=A/CONTROL_PICO 21|./src/control_pico.vhd|42|1*909087
+B/control_pico=3*1429458
+I=0*11426
+I/control_pico=I/CONTROL_PICO 0*47133
+M=11|0|v147|1558994093111|./src/control_pico.vhd|0*10973*0x7579a056c82905890a27123b5da06d1a80c9c39b|0*11344*0x7bd7e13dc0415552f89596087806a8cf
+M/control_pico=M/CONTROL_PICO 21|0|v147|1559059459841|./src/control_pico.vhd|0*46094*0x1ed9eb0cb89bc2b2e79764d3e5e0fcb204b02514|0*47035*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/control_pico.vhd|28
+
+[datalogger_ipc_v23]
+A/datalogger_ipc_v23=A/DATALOGGER_IPC_V23 21|./src/datalogger_ipc_v23.vhd|66|1*935079
+B/datalogger_ipc_v23=3*1443465
+I=0*4945
+I/datalogger_ipc_v23=I/DATALOGGER_IPC_V23 0*125814
+M=11|0|v147|1558993390573|./src/DATALOGGER_IPC_V23.vhd|0*3941*0x3893d31094981a211bee9281da4263fd43225bcd|0*4851*0x7bd7e13dc0415552f89596087806a8cf
+M/datalogger_ipc_v23=M/DATALOGGER_IPC_V23 21|0|v147|1559059460056|./src/DATALOGGER_IPC_V23.vhd|0*121609*0xe5cb48db83836c7e8fc0025640dd267aca39871b|0*125698*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/DATALOGGER_IPC_V23.vhd|28
+
+[edge_detector]
+A/edge_detector=A/EDGE_DETECTOR 21|./src/edge_detector.vhd|18|1*868787
+B/edge_detector=3*1300963
+I=0*12216
+I/edge_detector=I/EDGE_DETECTOR 0*12856
+M=11|0|v147|1558994093116|./src/edge_detector.vhd|0*11804*0x57f1fe64f60ff5752b558ca589b74ddb4598f19d|0*12132*0x7bd7e13dc0415552f89596087806a8cf
+M/edge_detector=M/EDGE_DETECTOR 21|0|v147|1559059458972|./src/edge_detector.vhd|0*12323*0xa73417bce540a4afb208555a3d5a0834ae055620|0*12755*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/edge_detector.vhd|4
+
+[fsm_control_area_v9]
+A/fsm_control_area_v9=A/FSM_CONTROL_AREA_V9 21|./src/fsm_control_area_v9.vhd|64|1*878205
+B/fsm_control_area_v9=3*1334978
+I=0*73372
+I/fsm_control_area_v9=I/FSM_CONTROL_AREA_V9 0*80821
+M=11|0|v147|1558995410348|./src/FSM_CONTROL_AREA_V9.vhd|0*72273*0xa4aee144f266a93fde447bb014eb5117e76487df|0*73276*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_control_area_v9=M/FSM_CONTROL_AREA_V9 21|0|v147|1559059459186|./src/FSM_CONTROL_AREA_V9.vhd|0*73485*0xddfbd21065243dcdc2c8f547f88cfb8cb24630d6|0*80702*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/FSM_CONTROL_AREA_V9.vhd|28
+
+[fsm_control_pico]
+A/fsm_control_pico=A/FSM_CONTROL_PICO 21|./src/fsm_control_pico.vhd|41|1*870951
+B/fsm_control_pico=3*1304256
+I=0*13645
+I/fsm_control_pico=I/FSM_CONTROL_PICO 0*14683
+M=11|0|v147|1558994093168|./src/fsm_control_pico.vhd|0*13231*0x2e6b2b8a6f2c6e6a91c8313542331f9248b20d46|0*13555*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_control_pico=M/FSM_CONTROL_PICO 21|0|v147|1559059459022|./src/fsm_control_pico.vhd|0*13755*0xc5816f26818358c1130ba70e1dc01e4db19bcfdb|0*14573*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_control_pico.vhd|28
+
+[fsm_datalogger]
+B/fsm_datalogger=3*400578
+I=0*16775
+I/fsm_datalogger=I/FSM_DATALOGGER 0*24174
+M=11|0|v147|1558994093219|./src/fsm_datalogger.vhd|0*15706*0x98135d55c90adc6c42f498aaff5f6cd15dff4969|0*16689*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_datalogger.vhd|28
+
+[fsm_datalogger_ipc_v23]
+A/fsm_datalogger_ipc_v23=A/FSM_DATALOGGER_IPC_V23 21|./src/fsm_datalogger_ipc_v23.vhd|53|1*874476
+B/fsm_datalogger_ipc_v23=3*1310039
+I=0*92512
+I/fsm_datalogger_ipc_v23=I/FSM_DATALOGGER_IPC_V23 0*107026
+M=11|0|v147|1559052373373|./src/FSM_DATALOGGER_IPC_V23.vhd|0*91760*0x12261b637b3ae79ed0be1fb986f23c5d7d7fefd8|0*92410*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_datalogger_ipc_v23=M/FSM_DATALOGGER_IPC_V23 21|0|v147|1559059459125|./src/FSM_DATALOGGER_IPC_V23.vhd|0*102481*0xc58f3c37d9f7b2ea391d66e9db178bd3cc931573|0*106898*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/FSM_DATALOGGER_IPC_V23.vhd|28
+
+[fsm_muestra]
+A/fsm_muestra=A/FSM_MUESTRA 21|./src/fsm_muestra.vhd|40|1*872632
+B/fsm_muestra=3*1307348
+I=0*24905
+I/fsm_muestra=I/FSM_MUESTRA 0*25827
+M=11|0|v147|1558994093283|./src/fsm_muestra.vhd|0*24528*0x3d289cc66cf6a19e520b9beef978cb6f32ddabeb|0*24825*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_muestra=M/FSM_MUESTRA 21|0|v147|1559059459072|./src/fsm_muestra.vhd|0*25010*0xde39e198e09ac428624cfc4523a9cc7007bb627d|0*25732*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_muestra.vhd|28
+
+[fsm_spi]
+A/fsm_spi=A/FSM_SPI 21|./src/fsm_spi.vhd|50|1*906374
+B/fsm_spi=3*1412814
+I=0*26947
+I/fsm_spi=I/FSM_SPI 0*30043
+M=11|0|v147|1558994093335|./src/fsm_spi.vhd|0*26377*0xf9c03ae4f68e116f31e1ac2b96f6af5ef5378455|0*26875*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_spi=M/FSM_SPI 21|0|v147|1559059459784|./src/fsm_spi.vhd|0*27048*0x711b9d84452bd81cad5775cce7c2c47b9e107aca|0*29960*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_spi.vhd|28
+
+[fsm_sumador]
+A/fsm_sumador=A/FSM_SUMADOR 21|./src/fsm_sumador.vhd|42|1*883389
+B/fsm_sumador=3*1371926
+I=0*30830
+I/fsm_sumador=I/FSM_SUMADOR 0*31793
+M=11|0|v147|1558994093390|./src/fsm_sumador.vhd|0*30418*0x7e7950880eb3514130d2b85f95ad8efc9672dc67|0*30750*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_sumador=M/FSM_SUMADOR 21|0|v147|1559059459250|./src/fsm_sumador.vhd|0*30935*0x601bc9f690b3b255ebaecdaea224d0627f1f2a07|0*31698*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_sumador.vhd|28
+
+[fsm_vin]
+A/fsm_vin=A/FSM_VIN 21|./src/fsm_vin.vhd|42|1*887362
+B/fsm_vin=3*1379309
+I=0*60449
+I/fsm_vin=I/FSM_VIN 0*61420
+M=11|0|v147|1558994990633|./src/fsm_vin.vhd|0*60055*0x38f9ba1539ed78836fc3735841cf21f0564613fc|0*60377*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_vin=M/FSM_VIN 21|0|v147|1559059459348|./src/fsm_vin.vhd|0*60550*0x38faf0ee8de4b5fc3ebe95649f64978693d3c6b6|0*61337*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_vin.vhd|28
+
+[fsm_vout]
+A/fsm_vout=A/FSM_VOUT 21|./src/fsm_vout.vhd|42|1*885359
+B/fsm_vout=3*1375493
+I=0*62195
+I/fsm_vout=I/FSM_VOUT 0*63275
+M=11|0|v147|1558994990698|./src/fsm_vout.vhd|0*61793*0x53861be2a65ba1adc204443b77c2dee1639f79e1|0*62121*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_vout=M/FSM_VOUT 21|0|v147|1559059459298|./src/fsm_vout.vhd|0*62297*0xe63b0034b8405688490dd9998dd46ae260e4546d|0*63189*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_vout.vhd|28
+
+[fsm_vt]
+A/fsm_vt=A/FSM_VT 21|./src/fsm_vt.vhd|42|1*894999
+B/fsm_vt=3*1393996
+I=0*64026
+I/fsm_vt=I/FSM_VT 0*65066
+M=11|0|v147|1558994990803|./src/fsm_vt.vhd|0*63640*0xc5bcf8fb4f77681a62ffe25b0ca66310ef3747bd|0*63956*0x7bd7e13dc0415552f89596087806a8cf
+M/fsm_vt=M/FSM_VT 21|0|v147|1559059459520|./src/fsm_vt.vhd|0*64126*0x8aa1ab9d8f0b1c029d8dce64584421653bf37af2|0*64986*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/fsm_vt.vhd|28
+
+[memoria_fifo]
+A/memoria_fifo=A/MEMORIA_FIFO 21|./src/memoria_fifo.vhd|48|1*889358
+B/memoria_fifo=3*1382596
+I=0*32823
+I/memoria_fifo=I/MEMORIA_FIFO 0*34228
+M=11|0|v147|1558994093445|./src/memoria_fifo.vhd|0*32272*0x5ac7e2cf2b9c47194b8e4d4bb91f9efeae0c9b33|0*32741*0x7bd7e13dc0415552f89596087806a8cf
+M/memoria_fifo=M/MEMORIA_FIFO 21|0|v147|1559059459400|./src/memoria_fifo.vhd|0*33050*0xbd1449a4147efc234d6037d2154cdd4d15941bb0|0*34130*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/memoria_fifo.vhd|30
+
+[registro_corrimiento_izq]
+A/registro_corrimiento_izq=A/REGISTRO_CORRIMIENTO_IZQ 21|./src/registro_corrimiento_izq.vhd|43|1*892783
+B/registro_corrimiento_izq=3*1390348
+I=0*35252
+I/registro_corrimiento_izq=I/REGISTRO_CORRIMIENTO_IZQ 0*36055
+M=11|0|v147|1558994093497|./src/registro_corrimiento_izq.vhd|0*34770*0x2ae2ddf918d7bc3e9188968087df57305dec9f19|0*35146*0x7bd7e13dc0415552f89596087806a8cf
+M/registro_corrimiento_izq=M/REGISTRO_CORRIMIENTO_IZQ 21|0|v147|1559059459455|./src/registro_corrimiento_izq.vhd|0*35370*0xd56d8706c70715b5c7e8503ccb61045e16f67e7c|0*35921*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/registro_corrimiento_izq.vhd|28
+
+[registro_paralelo_hold]
+A/registro=A/Registro 21|./src/registro_paralelo_hold.vhd|18|1*904212
+B/registro=3*1409346
+I=0*36991
+I/registro=I/Registro 0*37684
+M=11|0|v147|1558994093546|./src/registro_paralelo_hold.vhd|0*36511*0x76721a19b1faa3998b45fef14063616e609f5dfa|0*36889*0x7bd7e13dc0415552f89596087806a8cf
+M/registro=M/Registro 21|0|v147|1559059459734|./src/registro_paralelo_hold.vhd|0*37107*0xe27602c72800be8114a80b7e9f418ecf33031f2f|0*37570*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/registro_paralelo_hold.vhd|5
+
+[registro_paralelo_hold_clear]
+A/registro=A/Registro 21|./src/registro_paralelo_hold_clear.vhd|18|1*896988
+B/registro=3*1397810
+I=0*38686
+I/registro=I/Registro 0*39445
+M=11|0|v147|1558994093598|./src/registro_paralelo_hold_clear.vhd|0*38154*0xdec8285784de022f482cfd9d756839da55f00919|0*38572*0x7bd7e13dc0415552f89596087806a8cf
+M/registro=M/Registro 21|0|v147|1559059459571|./src/registro_paralelo_hold_clear.vhd|0*38808*0xc1a94b7755a7dfc74600a70b45f8b39c89113d39|0*39319*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/registro_paralelo_hold_clear.vhd|5
+
+[spi_slave_v4]
+A/spi_slave_v4=A/SPI_SLAVE_V4 21|./src/spi_slave_v4.vhd|43|1*901362
+B/spi_slave_v4=3*1404466
+I=0*65961
+I/spi_slave_v4=I/SPI_SLAVE_V4 0*66817
+M=11|0|v147|1558994990909|./src/spi_slave_v4.vhd|0*65483*0x0f3bc12773f44db54c4bd0498e26fa89c65d92cb|0*65879*0x7bd7e13dc0415552f89596087806a8cf
+M/spi_slave_v4=M/SPI_SLAVE_V4 21|0|v147|1559059459677|./src/spi_slave_v4.vhd|0*66129*0x5c11e065be183a1ce553aef30bb5af34eb42e6de|0*66719*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/spi_slave_v4.vhd|29
+
+[sumador]
+A/sumador=A/SUMADOR 21|./src/sumador.vhd|47|1*912570
+B/sumador=3*1431066
+I=0*40411
+I/sumador=I/SUMADOR 0*41418
+M=11|0|v147|1558994093647|./src/sumador.vhd|0*39914*0x1fc25e19e0ee8841349515089602d8c4f713e617|0*40339*0x7bd7e13dc0415552f89596087806a8cf
+M/sumador=M/SUMADOR 21|0|v147|1559059459895|./src/sumador.vhd|0*40581*0x13096fdceb376c4a446d8fab37d239ae87fd3cd0|0*41335*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/sumador.vhd|29
+
+[symetric_timebase]
+A/timebase=A/TimeBase 21|./src/symetric_timebase.vhd|18|1*899322
+B/timebase=3*1401758
+I=0*42534
+I/timebase=I/TimeBase 0*43264
+M=11|0|v147|1558994093701|./src/symetric_timebase.vhd|0*42070*0x40de577b6d5aecef104cab1326b3d960e50222c1|0*42442*0x7bd7e13dc0415552f89596087806a8cf
+M/timebase=M/TimeBase 21|0|v147|1559059459623|./src/symetric_timebase.vhd|0*42714*0xb16f236de93d8a674339e542814b309ae72049e6|0*43160*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/symetric_timebase.vhd|5
+
+[top_spi_v4]
+A/top_spi_v4=A/TOP_SPI_V4 21|./src/top_spi_v4.vhd|44|1*916633
+B/top_spi_v4=3*1437173
+I=0*44215
+I/top_spi_v4=I/TOP_SPI_V4 0*45522
+M=11|0|v147|1558994093754|./src/top_spi_v4.vhd|0*43763*0x7e9010332bf6ce2d2bdd010ad2e9ca173eeb5460|0*44137*0x7bd7e13dc0415552f89596087806a8cf
+M/top_spi_v4=M/TOP_SPI_V4 21|0|v147|1559059459947|./src/top_spi_v4.vhd|0*44319*0x96fcf94eb6f58230154e7b7d4deb9185082d6a14|0*45430*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/top_spi_v4.vhd|28
+
+[~A]
+ModifyID=1373
+Version=73
+
+[~MFT]
+0=289|0DATALOGGER_IPC_V23.mgf|125814|57013
+1=444|1DATALOGGER_IPC_V23.mgf|935079|864591
+3=431|3DATALOGGER_IPC_V23.mgf|1443465|1257522
+
+[~U]
+base_de_tiempo=11|0*5497|
+contador_ascendente_hold_clear=Contador_ascendente_hold_clear 11|0*7303|
+control_area_v9=CONTROL_AREA_V9 11|0*9172|
+control_pico=CONTROL_PICO 11|0*10660|
+datalogger_ipc_v23=11|0*3107|
+edge_detector=EDGE_DETECTOR 11|0*11532|
+fsm_control_area_v9=FSM_CONTROL_AREA_V9 11|0*71362|
+fsm_control_pico=FSM_CONTROL_PICO 11|0*12977|
+fsm_datalogger=FSM_DATALOGGER 11|0*14810|
+fsm_datalogger_ipc_v23=11|0*91195|
+fsm_muestra=FSM_MUESTRA 11|0*24297|
+fsm_spi=FSM_SPI 11|0*25944|
+fsm_sumador=FSM_SUMADOR 11|0*30152|
+fsm_vin=FSM_VIN 11|0*59796|
+fsm_vout=FSM_VOUT 11|0*61529|
+fsm_vt=FSM_VT 11|0*63386|
+memoria_fifo=MEMORIA_FIFO 11|0*31910|
+registro_corrimiento_izq=REGISTRO_CORRIMIENTO_IZQ 11|0*34468|
+registro_paralelo_hold=Registro_Paralelo_Hold 11|0*36198|
+registro_paralelo_hold_clear=Registro_Paralelo_Hold_Clear 11|0*37809|
+spi_slave_v4=SPI_SLAVE_V4 11|0*65173|
+sumador=SUMADOR 11|0*39576|
+symetric_timebase=Symetric_TimeBase 11|0*41798|
+top_spi_v4=TOP_SPI_V4 11|0*43453|
+
