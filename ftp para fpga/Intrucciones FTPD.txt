@@ -1,8 +1,8 @@
 1 Poner IP estática a la FPGA http://www.terasic.com.tw/wiki/How_to_set_static_IP_for_DE10-Nano_console_image
-2 instalar proftpd en FPGA (opkg)
-3 modificar el archivo proftpd.conf con el de la carpeta
+2 instalar proftpd en FPGA (opkg install proftpd)
+3 modificar el archivo /etc/naproftpd.conf con el de la carpeta
 4 en la computadora instalar winscp como explorador
-5 crear una sesión con la IP de la FPGA en winscp como sftp
+5 crear una sesión con la IP de la FPGA en winscp como sftpop
 6 en notepad seleccionar plugins->administrar plugins 
 7 instalar nppftp
 8 crear sesión con la IP estática y listo
