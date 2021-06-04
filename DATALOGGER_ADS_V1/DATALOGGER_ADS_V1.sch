@@ -9698,14 +9698,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="2.54" y1="0" x2="20.32" y2="0" width="0.127" layer="21"/>
 <wire x1="22.86" y1="2.54" x2="22.86" y2="15.24" width="0.127" layer="21"/>
 <wire x1="20.32" y1="17.78" x2="2.54" y2="17.78" width="0.127" layer="21"/>
-<pad name="VIN" x="2.54" y="2.54" drill="0.6"/>
-<pad name="GND" x="5.08" y="2.54" drill="0.6"/>
-<pad name="SCL" x="7.62" y="2.54" drill="0.6"/>
-<pad name="SDA" x="10.16" y="2.54" drill="0.6"/>
-<pad name="BAT" x="12.7" y="2.54" drill="0.6"/>
-<pad name="32K" x="15.24" y="2.54" drill="0.6"/>
-<pad name="SQW" x="17.78" y="2.54" drill="0.6"/>
-<pad name="RES" x="20.32" y="2.54" drill="0.6"/>
+<pad name="VIN" x="2.54" y="2.54" drill="1"/>
+<pad name="GND" x="5.08" y="2.54" drill="1"/>
+<pad name="SCL" x="7.62" y="2.54" drill="1"/>
+<pad name="SDA" x="10.16" y="2.54" drill="1"/>
+<pad name="BAT" x="12.7" y="2.54" drill="1"/>
+<pad name="32K" x="15.24" y="2.54" drill="1"/>
+<pad name="SQW" x="17.78" y="2.54" drill="1"/>
+<pad name="RES" x="20.32" y="2.54" drill="1"/>
 <wire x1="0" y1="15.24" x2="0" y2="2.54" width="0.127" layer="21"/>
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="21" curve="-90"/>
 <wire x1="22.86" y1="2.54" x2="20.32" y2="0" width="0.127" layer="21" curve="-90"/>
@@ -18084,7 +18084,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="142.24" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_14" class="0">
+<net name="SYNC3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="17"/>
 <wire x1="167.64" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
