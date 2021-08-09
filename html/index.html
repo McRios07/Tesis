@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Para poner el lenguaje en particular "es-MX" -->
+
+<head>
+  <meta charset="UTF-8"><!-- Codifica bien los caracteres para que se adapten al idioma, es buana práctica ponerlo -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- No es estándard hace compatible internet explorer a chrome, se puede borrar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- zona visible del navegador donde se renderiza el contenido -->
+  <!-- Título de la página entre 55 y 65 caracteres de longitud -->
+  <title>Aprendiendo HTML</title>
+  <!-- Que no exceda los 165 caracteres -->
+  <meta name="desription" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
+  <style>
+    h2 {
+      color: orangered;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/estilos.css">
+</head>
+
+<body>
+  <h2>Aprendiendo HTML</h2>
+  <!-- <p>Técnicas para ligar</p> -->
+  <!-- Esto es un comentario -->
+  <!-- wgf
+    ergerw
+    ergerwerwg
+    erg -->
+  <p>Hola, escribiendo mi primer documento HTML</p>
+  <p>Aprendiendo sobre Diseño Web</p>
+  <hr>
+  <h2>Encabezados HTML</h2>
+  <h1>Encabezado de nivel 1</h1><!-- Solo se debe de tener un solo título h1 en el documento HTML -->
+  <h2>Encabezado de nivel 2</h2>
+  <h3>Encabezado de nivel 3</h3>
+  <h4>Encabezado de nivel 4</h4>
+  <h5>Encabezado de nivel 5</h5>
+  <h6>Encabezado de nivel 6</h6>
+  <hr>
+  <h2>Etiquetas de texto básicas</h2>
+  <p>Un párrafo</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi alias, sapiente aliquam quae veniam
+    doloribus voluptas numquam provident corporis,
+    consectetur atque modi enim explicabo harum ad sunt blanditiis ratione eos.</p><!-- lorem para poner texto -->
+  <p>
+    Palabras en: <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>, e=mc<sup>2</sup>,
+    H<sub>2</sub>O, <mark>marcatextos</mark>, <small>letras pequeñas</small>
+  </p>
+  <hr>
+  <h2>Etiquetas de texto semánticas</h2>
+  <p>
+    <strong>Este texto es importante</strong>. <em>Este texto hace énfasis</em>.
+  </p>
+  <blockquote>Yo sólo sé, que no se nada</blockquote>
+  <cite>Sócrates</cite>
+  <hr>
+  <h2>Etiquetas de saltos</h2>
+  <!-- la etiqueta <br> sirve para dar un salto de linea -->
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> sequi quibusdam ducimus enim blanditiis, eveniet
+    possimus illo.<br> Reprehenderit totam provident expedita, illo ut modi doloribus possimus suscipit cum repudiandae
+    exercitationem!</p>
+  <hr><!-- separar entre temas -->
+  <h2>Etiquetas de Formateo</h2>
+  <p>
+  <pre>
+  -Tareas por hacer
+    - Terminar de grabar las secciones de este curso.
+    - Editar en un solo video.
+  -CSS
+    -Comenzar a grabar secciones -CSS.
+    -Editar en un sólo video.
+    </pre>
+  </p>
+  <p>
+    <code>Este texto está en formato de código</code>
+  </p>
+  <p>
+  <pre>
+      <code>
+        always @(posedge fpga_clk_50 or negedge hps_fpga_reset_n) 
+        begin
+          if (~hps_fpga_reset_n) begin
+            counter &lt= 0; 
+            led_level &lt=0; 
+          end 
+          
+          else if (counter==24999999) begin 
+            counter &lt=0; 
+            led_level &lt=~led_level; 
+          end 
+          
+          else 
+          counter &lt=counter + 1'b1; 
+        end
+      </code>
+    </pre>
+  </p>
+  <hr>
+  <h2>Etiquetas semánticas estructurales</h2>
+  <div>Es una etiqueta contenedora que no tiene semántica</div>
+  <header>header - Cabecera de un sitio web o de una sección</header>
+  <main>main - Define la sección principal del documento, sólo puede existir una etiqueta main por documento</main>
+  <footer>footer - Pié de página de un sitio web o de una sección</footer>
+  <nav>nav - representa una navegación</nav>
+  <article>
+    article - Representa una sección de autocontenido (que por sí sola se explica)
+  </article>
+  <aside>
+    aside - representa contenido complementario o secundario
+  </aside>
+  <section>section - Representa una sección de contenido genérico</section>
+  <address>address - Representa una información de contacto</address>
+  <hr>
+  <h2>Etiquetas de bloque VS etiquetas de línea</h2>
+  <div style="background-color: yellow;">La etiqueta de bloque por excelencia es div, una etiqueta de bloque es aquella
+    que genera saltos de línea con sus
+    etiquetas hermanas</div>
+  <span style="background-color: greenyellow;">La etiqueta de línea por excelencia es la span, una etiqueta de línea
+    sólo ocupa el espacio necesario que tiene
+    su contenido</span>
+  <span>Hola, soy otra span</span>
+  <hr>
+  <h2>Estilos CSS en HTML</h2>
+  <p>
+  <pre>
+    Los estilos tienen 3 formas básicas de colocarlos:
+      - Directamente en la etiqueta colocarle el style.
+      - En head, abrir una etiqueta de style e indicar los estilos de diferentes etiquetas.
+      - Crear una hoja de estilos.css dentro de una carpeta en el proyecto, y definir los estilos de las etiquetas.
+        Posterior a esto, hacer el link de la hoja de estilos.css en la sección de head.
+    </pre>
+  </p>
+</body>
+
+</html>
